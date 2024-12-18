@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Text:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
+
+:root {
+  font-family: "Red Hat Text", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: hsl(20, 50%, 98%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+.app {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1440px;
+}
+
+.deserts {
+  width: 1000px;
+}
+
+.deserts-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.desert-card {
+  width: 300px;
+  position: relative;
+}
+
+.desert-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.desert-card button {
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: hsl(20, 50%, 98%);
+  bottom: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 600;
+  padding: 6px;
+  border: 1px solid hsl(14, 25%, 72%);
+  border-radius: 30px;
+  cursor: pointer;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.desert-card button:hover {
+  color: hsl(14, 86%, 42%);
+  border-color: hsl(14, 86%, 42%);
+}
+
+.desert-card button img {
+  height: 30px;
+  width: 30px;
+}
+
+.desert-card-category {
+  margin-top: 20px;
+  opacity: 0.5;
+}
+
+.desert-card-price {
+  color: hsl(14, 86%, 42%);
+  font-weight: 600;
+}
+
+.cart {
+  background: #fff;
+  width: 400px;
+  height: 100%;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+dialog.modal {
+  background-color: #e4ddd4;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  width: 80%;
+  max-width: 40rem;
+  z-index: 100;
+  animation: fade-slide-up 0.3s ease-out forwards;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+@keyframes fade-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
