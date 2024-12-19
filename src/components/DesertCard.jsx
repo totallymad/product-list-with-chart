@@ -11,7 +11,11 @@ export default function DesertCard({ desert }) {
 
   return (
     <div className="desert-card">
-      <img src={desert.image.desktop} alt={desert.name} />
+      <img
+        src={desert.image.desktop}
+        srcSet={`${desert.image.mobile} 600w, ${desert.image.tablet} 1000w, ${desert.image.desktop} 1800w`}
+        alt={desert.name}
+      />
       {!existingInCart ? (
         <button
           className="desert-card-button"

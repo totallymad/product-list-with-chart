@@ -278,6 +278,7 @@ h1 {
 }
 
 .modal-wrapper {
+  width: 100%;
   background: hsl(13, 31%, 94%);
   padding: 20px;
   border-radius: 15px;
@@ -345,4 +346,71 @@ h1 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@media (max-width: 1400px) {
+  .app {
+    justify-content: space-between;
+  }
+
+  .deserts {
+    width: 700px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .desert-card {
+    width: 260px;
+  }
+}
+
+@media (max-width: 950px) {
+  .deserts {
+    width: 400px;
+  }
+  .desert-card {
+    width: 350px;
+  }
+
+  .cart {
+    width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  .app {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .deserts {
+    width: 100%;
+  }
+  .deserts-list {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .desert-card {
+    width: 100%;
+  }
+
+  .cart {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 50px 10px;
+  }
+
+  .modal {
+    margin: auto auto 0 auto;
+    padding: 30px 10px;
+    width: 100%;
+    height: 90vh;
+  }
+
 }
