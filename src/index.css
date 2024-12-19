@@ -59,8 +59,9 @@ h1 {
   border-radius: 10px;
 }
 
-.desert-card button {
+.desert-card-button {
   width: 180px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,14 +80,59 @@ h1 {
   font-size: 14px;
 }
 
-.desert-card button:hover {
+.desert-card-button:hover {
   color: hsl(14, 86%, 42%);
   border-color: hsl(14, 86%, 42%);
 }
 
-.desert-card button img {
+.desert-card-button img {
   height: 30px;
   width: 30px;
+}
+
+.desert-card-button-checked {
+  width: 180px;
+  height: 45px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  background: hsl(14, 86%, 42%);
+  bottom: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: hsl(14, 25%, 72%);
+  font-weight: 600;
+  padding: 6px;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.desert-card-button-checked button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background: hsl(14, 86%, 42%);
+  border: 1px solid hsl(14, 25%, 72%);
+  border-radius: 100%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.desert-card-button-checked button:hover {
+  background: white;
+  border: none;
+}
+
+.desert-card-button-checked button svg path {
+  fill: white; /* Задаём начальный цвет */
+}
+
+.desert-card-button-checked button:hover svg path {
+  fill: hsl(14, 86%, 42%);
 }
 
 .desert-card-category {
